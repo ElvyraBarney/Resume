@@ -1,0 +1,85 @@
+<html>
+    <head>
+       <title>Elvyra's Resume</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">  
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 p-2 bg-light">
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">Menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bg-success-subtle p-4">
+                    <h1 class="fw-bold text-center" style="font-family: courier new;">Elvyra Barney</h1>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start container-fluid bg-success-subtle" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title ">
+                        <div class="">Menu</div>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <!--two BS5 components offcanvas sidebar and buttons -->
+                <div class="offcanvas-body">
+                    <button class="btn btn-outline-light m-2" style="width: 100%;"><a href="expierence.html" class="text-decoration-none text-dark" >Expierence</a></button><br>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 border rounded mt-3 p-5">
+                        <!--javascript animation popover-->
+                        <!--BS5 components icons-->
+                        <h2 class="fw-bold text-center " style="font-family: courier new;" ><a  class="text-decoration-none text-dark" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="To get into contact with me you can use these platforms">Contact Me</a></h2>
+                        <h3 class="text-center" ><a href="https://www.instagram.com/elvyrabarney/" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" ><i class="bi bi-instagram"></i> @elvyrabarney</a></h3>
+                        <h3 class="text-center"><a href="https://mail.google.com/mail/u/0/#inbox" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><i class="bi bi-envelope"></i> elvyrabarney@gmail.com</a></h3>
+                        <h3 class="text-center text-primary"><i class="bi bi-telephone"></i> 339-927-8321</a></h3>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <div class="card text-bg-success" style="height: 300px;">
+                            <div class="card-body m"><div class="spinner-border text-light"></div></div>
+                            <div class="card-footer">
+                                Birthday: September 16th, 2007 <br> Education: Winchester High School - expected completion june 2026</div>
+                            <!-- javascript function -->
+                            <button id="myButton" class="btn btn-dark m-1">Click here if you have any further inquieres</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-12 border rounded m-3 p-4 ">
+                        <h4 class="fw-bold text-center " style="font-family: courier new;">About Me</h4>
+                        <p class="text-center" style="font-family; courier new;">I was born and raised in Massachusetts in the middlesex county. I have never lived anywhere else but Mass but I spend my summer in Cape May, New Jersey with my grandparents and cousins. I like to spend my free time hanging out with friends, reading, or watching tv. Some of my hobbies include baking, I love to try out new recipies but also stick to the ones I know so that I can make cookies for kids that I go to school with. I also love photography, I have taken  the class in school for the past 3 years and I have my own camera. I know who to do both digitl and film  photography but I prefer film because you get to work with the pictures physically rather then on a screen. I love the process of developing and having to find the right settings for your photos. I am very interested in history, pretty much all kinds.</p>
+                    </div>
+
+                </div>
+
+        </div>
+        <script>
+        //:javascript function//
+                alert("Hi my name is Elvyra Barney. On this page you will find inforation about myself, where I got my education, my interests and hobbies along with my job experience. You can reach me at my email in the contact section if you have any questions.")
+            const button = document.getElementById('myButton');
+            button.addEventListener('click', function() {
+                const userInput = prompt('Write any questions here:');
+                console.log(userInput);
+            });
+           var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+            })
+            
+        </script>
+    </body>
+</html>
